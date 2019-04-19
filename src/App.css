@@ -1,7 +1,31 @@
-html,body{
-  height: 100%;
+#root,#App,#SideBar_box,#Content_box{
+    height: 100%;
 }
 
-.r-m-5{
-  margin: 25px 5px;
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: -webkit-linear-gradient(-45deg, #294b67 0%, #0c161f 100%);
+    background: #294b67;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #294b67 0%, #0c161f 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #294b67 0%, #0c161f 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #294b67 0%, #0c161f 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#294b67', endColorstr='#0c161f', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+#MainPart{
+    height:calc(100% - 80px);
+}
+
+#SideBar_box{
+    min-width: 260px;
 }

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.13 30.17">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#DDD;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style>
+    </defs>
+    <title>repeat_icon</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g id="refresh">
+                <path class="cls-1" d="M1.18,13.18a14.27,14.27,0,0,1,28-1.38l-2.58-1.59"/>
+                <line class="cls-1" x1="29.14" y1="11.8" x2="30.13" y2="8.82"/>
+                <path class="cls-1" d="M29.8,16.55A14.27,14.27,0,0,1,1.9,18.81l2.63,1.5"/>
+                <line class="cls-1" x1="1.9" y1="18.81" x2="1" y2="21.82"/>
+            </g>
+        </g>
+    </g>
+</svg>

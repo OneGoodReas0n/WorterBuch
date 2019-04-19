@@ -1,0 +1,69 @@
+.main{
+    min-height:100%;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #213a4f 0%, #00192e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #213a4f 0%, #00192e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #213a4f 0%, #00192e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#213a4f', endColorstr='#00192e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.8);
+}
+
+.container{
+    padding-top: 30px;
+    min-height: 100%;
+}
+
+/* USER INFO */
+
+.user_name{
+    margin-left: 10px;
+    font-family: Roboto;
+    font-weight: var(--sidebar_user_name_weight);
+    color: white;
+    font-size: var(--sidebar_user_name_fontSize);
+}
+
+.user_avatar{
+    width: 60px;
+    height: 60px;
+}
+
+/* SECTIONS */
+
+.sections_container{
+    margin-top: 40px;
+}
+
+.sections_section{
+    margin: 20px 0;
+}
+
+.sections_section_icon{
+    fill: #DDDDDD;
+    width: 25px;
+    height:32px;
+}
+
+.sections_section_icon_bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #2C4458;
+}
+
+.sections_section_name{
+    color:white;
+    font-family: Roboto;
+    font-size: var(--sidebar_section_title_fontSize);
+    font-weight: var(--sidebar_section_title_weight);
+}
+
+/* SECTIONS HOVERS */
+

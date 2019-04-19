@@ -1,0 +1,52 @@
+#divMain {
+    z-index: 1;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background: #13212e;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #13212e 0%, #01182c 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #13212e 0%, #01182c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #13212e 0%, #01182c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13212e', endColorstr='#01182c', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.8);
+}
+
+#container{
+    margin: 0 auto;
+    width: 99%;
+    height: 100%;
+    color: white;
+}
+
+#search_box{
+    width: 98%;
+    height: 36px;
+}
+
+#search_bg{
+    width: 93%;
+    margin: 0 auto;
+}
+
+#search_bg p{
+    margin: 0;
+}
+
+.panel_button{
+    width: 28px;
+    height: 28px;
+    fill: #2C485F;
+}
+
+#buttons_panel svg{
+    margin: 0 16px;
+}
+
+#buttons_panel a{
+    display: contents;
+}

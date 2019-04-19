@@ -1,30 +1,36 @@
 import React from 'react';
-import { createStore } from 'redux';
-import { BrowserRouter, Switch, Route,Redirect } from 'react-router-dom'
+
+import { BrowserRouter } from 'react-router-dom'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import Header from './containers/HeaderComponent';
-import Content from './containers/ContentComponent';
-import Footer from './containers/FooterComponent';
-import './App.css'
-import data from './data';
+import { Row, Col } from "reactstrap";
+import Header from "./containers/Header/Header";
+import Sidebar from "./containers/Sidebar/SideBar";
+import Content from "./containers/Content/Content";
+import "./App.css";
+import "./Fonts.css";
 
 class App extends React.Component {
 
   constructor() {
     super()
-
     this.state = {
-      contacts: data
+
     }
   }
 
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div id="App">
           <Header />
-          <Content contacts={this.state.contacts}/>
-          <Footer />
+          <Row id="MainPart" className="w-100">
+            <Col md={2} id="SideBar_box">
+              <Sidebar />
+            </Col>
+            <Col md={10} id="Content_box">
+              <Content />
+            </Col>
+          </Row>
         </div>
       </BrowserRouter>
     )

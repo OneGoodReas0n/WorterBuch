@@ -1,0 +1,15 @@
+.Rectangle{
+    width: 10px;
+    height: 10px;
+    border: 1px white solid;
+}
+
+.task_block{
+    align-items: center;
+    margin: 10px 0px 5px 0px;
+}
+
+.task_table_task_text{
+    font-size: var(--content_progressBar_taskTable_task_fontSize);
+    font-weight: var(--content_progressBar_taskTable_task_weight);
+}

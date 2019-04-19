@@ -1,0 +1,23 @@
+:root{
+    /* SideBar */
+    --sidebar_user_name_fontSize:16px;
+    --sidebar_user_name_weight:500;
+
+    --sidebar_section_title_fontSize:14px;
+    --sidebar_section_title_weight:400;
+
+    /* Content */
+    --content_progressBar_date_fontSize:18px;
+    --content_progressBar_date_weight:900;
+
+    --content_progressBar_title_fontSize:18px;
+    --content_progressBar_title_weight:600;
+
+    --content_progressBar_item_percent:13px;
+
+    --content_progressBar_taskTable_fontSize:18px;
+    --content_progressBar_taskTable_weight:700;
+
+    --content_progressBar_taskTable_task_fontSize:16px;
+    --content_progressBar_taskTable_task_weight:400;
+}
