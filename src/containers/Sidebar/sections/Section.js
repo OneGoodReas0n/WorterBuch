@@ -14,16 +14,16 @@ export default function section(props) {
     return (
         <div className={styles.sections_container}>
             <Row className={styles.sections_section}>
-                <Col md={3} className="p-0">
+                <Col md={3} className="pl-0">
                     <div className={styles.sections_section_icon_bg}>
-                        {section === "Home" ? <IconHome className={styles.sections_section_icon} /> : 
-                        section === "Vocabular" ? <IconBook className={styles.sections_section_icon} /> : 
-                        section === "Repeatitorium" ? <IconRepeat className={styles.sections_section_icon} /> :
-                        section === "Excersices" ? <IconExam className={styles.sections_section_icon} /> : 
-                        section === "Statistic" ? <IconStats className={styles.sections_section_icon}/> : ""} 
+                        {section === "Home" ? <IconHome className={styles.sections_section_icon} /> :
+                            section === "Vocabular" ? <IconBook className={styles.sections_section_icon} /> :
+                                section === "Repeatitorium" ? <IconRepeat className={styles.sections_section_icon} /> :
+                                    section === "Excersices" ? <IconExam className={styles.sections_section_icon} /> :
+                                        section === "Statistic" ? <IconStats className={styles.sections_section_icon} /> : ""}
                     </div>
                 </Col>
-                <Col md={9} className="d-flex align-items-center p-0">
+                <Col className="d-flex align-items-center">
                     <span className={styles.sections_section_name}>{section}</span>
                 </Col>
             </Row>

@@ -1,13 +1,18 @@
 import React from 'react';
 
-import { BrowserRouter } from 'react-router-dom'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// PACKAGES
 import { Row, Col } from "reactstrap";
-import Header from "./containers/Header/Header";
-import Sidebar from "./containers/Sidebar/SideBar";
-import Content from "./containers/Content/Content";
+
+// CSS
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import "./App.css";
 import "./Fonts.css";
+import "./Colors.css";
+
+// PAGES
+import Header from "./containers/Header/Header";
+import Sidebar from "./containers/Sidebar/SideBar";
+import Content from "./containers/Content/Content"
 
 class App extends React.Component {
 
@@ -20,7 +25,6 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
         <div id="App">
           <Header />
           <Row id="MainPart" className="w-100">
@@ -32,7 +36,6 @@ class App extends React.Component {
             </Col>
           </Row>
         </div>
-      </BrowserRouter>
     )
   }
 

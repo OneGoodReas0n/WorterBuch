@@ -40,7 +40,7 @@
 .panel_button{
     width: 28px;
     height: 28px;
-    fill: #2C485F;
+    fill: var(--header_icons_color);
 }
 
 #buttons_panel svg{

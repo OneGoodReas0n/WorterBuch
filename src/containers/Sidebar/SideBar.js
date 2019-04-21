@@ -1,9 +1,17 @@
 import React from "react";
-
 import { Row, Col } from "reactstrap";
-import { ReactComponent as Avatar } from "./icons/Rectangle.svg";
-import data from "./sections/data";
+import {Link} from "react-router-dom"
+
+// SVGs
+import { ReactComponent as Avatar } from "./icons/avatar.svg";
+
+// Data
+import routes from "../../routes";
+
+// CSS
 import styles from "./Sidebar.module.css";
+
+// Components
 import Section from "./sections/Section";
 
 class Sidebar extends React.Component {
@@ -11,7 +19,7 @@ class Sidebar extends React.Component {
     constructor() {
         super()
         this.state = {
-            sections : data,
+            sections : routes,
             styles : styles,
         }
     }
@@ -29,7 +37,9 @@ class Sidebar extends React.Component {
                         </Col>
                     </Row>
                     {this.state.sections.map((e)=>(
-                        <Section section = {e.name} styles = {this.state.styles} key={e.name} />
+                        <Link to={e.path}>
+                            <Section section = {e.name} styles = {this.state.styles} key={e.name} />
+                        </Link>
                     ))}
                 </div >
             </div >
