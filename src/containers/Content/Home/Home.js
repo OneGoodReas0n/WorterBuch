@@ -1,14 +1,18 @@
 import React from "react";
-import {Row,Col} from "reactstrap"
+import { Row, Col } from "reactstrap"
+
+// CSS
 import styles from "./Home.module.css"
+
+// Components
 import Task from "./components/Task";
 import tasks from "./data/tasks";
 
-export default function home(){
+export default function home() {
 
     const date = new Date();
 
-    const func = function(i) {
+    const func = function (i) {
         switch (i) {
             case 0:
                 return "Jan";
@@ -72,6 +76,11 @@ export default function home(){
                         </Row>
                     </Col>
                     <Col className="content_box gradientB_B mt-4">
+                        <Row>
+                            <Col className="text-center pt-4 pb-2">
+                                <span className={styles.task_table_title_text}>Die Ziele des Tags</span>
+                            </Col>
+                        </Row>
                     </Col>
                 </Col>
                 <Col>

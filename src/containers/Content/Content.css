@@ -9,6 +9,31 @@
     color: white;
 }
 
+/* ROUTING*/
+
+.route_section{
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+.route_link:hover{
+    opacity: .90;
+    text-decoration: none;
+}
+
+.route_link_active{
+    background: rgba(239, 61,89, 1);
+}
+
+
+/* Filter words*/
+
+.filter_component_activ{
+    text-decoration: underline;
+}
+
+
+
 /* GRADIENTS */
 
 .gradientB_W_B{
@@ -30,4 +55,38 @@
     background: -ms-linear-gradient(left, rgba(47, 62, 91, 1) 0%, rgba(30, 42, 61, 1) 100%);
     background: linear-gradient(to right, rgba(47, 62, 91, 1) 0%, rgba(30, 42, 61, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f3e5b', endColorstr='#1e2a3d', GradientType=1);
+}
+
+/* Active link styles */
+.home_active_style{
+    background: var(--active_home_color);
+}
+.vocabulary_active_style{
+    background: var(--active_vocabulary_color);
+}
+.repeatitorium_active_style{
+    background: var(--active_repeatitorium_color);
+}
+.excersices_active_style{
+    background: var(--active_excersices_color);
+}
+.statistic_active_style{
+    background: var(--active_statistic_color);
+}
+
+/* Word types */
+.filter_noun_style{
+    color: var(--noun_color);
+}
+.filter_verb_style{
+    color: var(--verb_color);
+}
+.filter_adjective_style{
+    color: var(--adjective_color);
+}
+.filter_adverb_style{
+    color: var(--adverb_color);
+}
+.filter_phrase_style{
+    color: var(--phrase_color);
 }

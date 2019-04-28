@@ -1,18 +1,39 @@
 import React from "react";
-import { Row, Col, Input, NavLink } from "reactstrap";
+import { Row, Col, Input } from "reactstrap";
+
+// Components
+import AddWordModal from "./components/AddWordModal"
+
+// CSS
 import styles from "./Header.module.css";
 import "./Header.css"
-import { ReactComponent as SVG_notification } from "./icons/notification.svg";
-import { ReactComponent as SVG_plus } from "./icons/plus.svg";
-import { ReactComponent as SVG_settings } from "./icons/settings.svg";
+
+// SVGs
+import { ReactComponent as SVGNotification } from "./icons/notification.svg";
+import { ReactComponent as SVGPlus } from "./icons/plus.svg";
+import { ReactComponent as SVGSettings } from "./icons/settings.svg";
 
 class Header extends React.Component {
 
     constructor() {
         super()
         this.state = {
-
+            isAddWordOpen: false,
+            isDropDownTypeOpen: false
         }
+        this.openAddWordModal = this.openAddWordModal.bind(this)
+        this.getModalStatus = this.getModalStatus.bind(this)
+    }
+
+    openAddWordModal(e){
+        e.preventDefault()
+        this.setState((prev) =>({
+            isAddWordOpen: !prev.isAddWordOpen
+        }))
+    }
+
+    getModalStatus(){
+        return this.state.isAddWordOpen
     }
 
     render() {
@@ -31,12 +52,14 @@ class Header extends React.Component {
                     </Col>
                     <Col md={6} className="d-flex justify-content-end">
                         <div id="buttons_panel">
-                            <a href="/add"><SVG_plus className="panel_button" /></a>
-                            <a href="/notifications"><SVG_notification className="panel_button" /></a>
-                            <a href="/settings"><SVG_settings className="panel_button" /></a>
+                            <a href="/add"><SVGPlus className="panel_button" onClick={this.openAddWordModal}/></a>
+                            <a href="/notifications"><SVGNotification className="panel_button" /></a>
+                            <a href="/settings"><SVGSettings className="panel_button" /></a>
                         </div>
                     </Col>
                 </Row>
+                {/* Modals */}
+                <AddWordModal toggle={this.openAddWordModal} isOpen={this.getModalStatus}/>
             </div>
         )
     }

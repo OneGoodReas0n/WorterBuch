@@ -29,3 +29,18 @@ body {
 #SideBar_box{
     min-width: 260px;
 }
+
+.MainTextStyle{
+    font-size: var(--content_main_text);
+    font-weight: var(--content_main_weight);
+}
+
+.SecondaryTextStyle{
+    font-size: var(--content_secondary_text);
+    font-weight: var(--content_secondary_weight);
+}
+
+.DefaultTextStyle{
+    font-size: var(--content_default_text);
+    font-weight: var(--content_default_weight);
+}

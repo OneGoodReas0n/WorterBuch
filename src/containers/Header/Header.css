@@ -43,6 +43,16 @@
     fill: var(--header_icons_color);
 }
 
+.form_button{
+    width: 20px;
+    height: 20x;
+    fill:#D4D4D4;
+}
+
+.modal-content{
+    max-width: 700px;
+}
+
 #buttons_panel svg{
     margin: 0 16px;
 }

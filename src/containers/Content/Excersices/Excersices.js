@@ -1,6 +1,6 @@
 import React from "react";
-import {Row,Col} from "reactstrap"
-import styles from "./Excersices.module.css"
+// import {Row,Col} from "reactstrap"
+// import styles from "./Excersices.module.css"
 
 export default function home(props){
 

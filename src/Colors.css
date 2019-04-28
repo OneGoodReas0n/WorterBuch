@@ -2,4 +2,20 @@
     --sidebar_icons_color:#DDD;
 
     --header_icons_color:#2C485F;
+
+    /* Section colors */
+    --default_section_color:#2C4458;
+
+    --active_home_color:#CC2A49;
+    --active_vocabulary_color:#F99E4C   ;
+    --active_repeatitorium_color:#F36F38    ;
+    --active_excersices_color:#EF4648   ;
+    --active_statistic_color:#582841 ;
+
+    /* Filter colors */
+    --noun_color:#EF3D59;
+    --verb_color:#2D9CDB;
+    --adjective_color:#F2C94C;
+    --adverb_color:#219653;
+    --phrase_color:#9B51E0;
 }

@@ -1,0 +1,18 @@
+.title_text{
+    font-size:var(--content_main_text);
+    font-weight:var(--content_main_weight);
+}
+
+.filter_title_text{
+    font-size: var(--content_secondary_text);
+    font-weight: var(--content_secondary_weight);
+}
+
+.filter_components_text{
+    font-size:var(--content_default_text);
+    font-weight: var(--content_default_weight);
+}
+
+.filter_components_link:hover{
+    text-decoration: none;
+}

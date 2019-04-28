@@ -1,6 +1,6 @@
 import React from "react";
-import {Row,Col} from "reactstrap"
-import styles from "./Statistic.module.css"
+// import {Row,Col} from "reactstrap"
+// import styles from "./Statistic.module.css"
 
 export default function home(props){
 

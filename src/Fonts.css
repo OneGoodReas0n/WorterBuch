@@ -20,4 +20,13 @@
 
     --content_progressBar_taskTable_task_fontSize:16px;
     --content_progressBar_taskTable_task_weight:400;
+
+    --content_main_text:20px;
+    --content_main_weight:700;
+
+    --content_secondary_text:18px;
+    --content_secondary_weight:500;
+
+    --content_default_text:16px;
+    --content_default_weight:500;
 }

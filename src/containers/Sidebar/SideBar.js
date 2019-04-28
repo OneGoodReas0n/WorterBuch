@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import {Link} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 // SVGs
 import { ReactComponent as Avatar } from "./icons/avatar.svg";
@@ -18,29 +18,34 @@ class Sidebar extends React.Component {
 
     constructor() {
         super()
+
         this.state = {
-            sections : routes,
-            styles : styles,
+            sections: routes,
+            styles: styles,
+            neededClassName: ""
         }
+
     }
 
     render() {
         return (
             <div className={styles.main}>
-                <div className={styles.container}>
+                <div>
                     <Row>
-                        <Col>
+                        <Col className={styles.user_block}>
                             <div>
                                 <Avatar className={styles.user_avatar} />
                                 <span className={styles.user_name}>Illia Korobov</span>
                             </div>
                         </Col>
                     </Row>
-                    {this.state.sections.map((e)=>(
-                        <Link to={e.path}>
-                            <Section section = {e.name} styles = {this.state.styles} key={e.name} />
-                        </Link>
-                    ))}
+                    {this.state.sections.map((e, index) => {
+                        return (
+                            <NavLink to={e.path} exact={e.exact} className="d-block route_link" activeClassName={e.activeClassName} key={index}>
+                                <Section section={e} styles={this.state.styles} activeClass={this.state.neededClassName} />
+                            </NavLink>
+                        )
+                    })}
                 </div >
             </div >
         )

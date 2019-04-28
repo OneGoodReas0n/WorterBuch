@@ -12,19 +12,19 @@ export default function section(props) {
     const styles = props.styles;
 
     return (
-        <div className={styles.sections_container}>
-            <Row className={styles.sections_section}>
+        <div className="p-3">
+            <Row className="route_section">
                 <Col md={3} className="pl-0">
-                    <div className={styles.sections_section_icon_bg}>
-                        {section === "Home" ? <IconHome className={styles.sections_section_icon} /> :
-                            section === "Vocabular" ? <IconBook className={styles.sections_section_icon} /> :
-                                section === "Repeatitorium" ? <IconRepeat className={styles.sections_section_icon} /> :
-                                    section === "Excersices" ? <IconExam className={styles.sections_section_icon} /> :
-                                        section === "Statistic" ? <IconStats className={styles.sections_section_icon} /> : ""}
+                    <div className={`${styles.sections_section_icon_bg}`}>
+                        {section.name === "Home" ? <IconHome className={styles.sections_section_icon} /> :
+                            section.name === "Vocabulary" ? <IconBook className={styles.sections_section_icon} /> :
+                                section.name === "Repeatitorium" ? <IconRepeat className={styles.sections_section_icon} /> :
+                                    section.name === "Excersices" ? <IconExam className={styles.sections_section_icon} /> :
+                                        section.name === "Statistic" ? <IconStats className={styles.sections_section_icon} /> : ""}
                     </div>
                 </Col>
                 <Col className="d-flex align-items-center">
-                    <span className={styles.sections_section_name}>{section}</span>
+                    <span className={styles.sections_section_name}>{section.name}</span>
                 </Col>
             </Row>
         </div>
