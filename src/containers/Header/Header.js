@@ -1,8 +1,9 @@
 import React from "react";
-import { Row, Col, Input } from "reactstrap";
+import { Row, Col, Input, Alert } from "reactstrap";
 
 // Components
 import AddWordModal from "./components/AddWordModal"
+import Test from "../../components/Test"
 
 // CSS
 import styles from "./Header.module.css";
@@ -19,21 +20,22 @@ class Header extends React.Component {
         super()
         this.state = {
             isAddWordOpen: false,
-            isDropDownTypeOpen: false
+            isAlertSuccessShow: false
         }
         this.openAddWordModal = this.openAddWordModal.bind(this)
-        this.getModalStatus = this.getModalStatus.bind(this)
+        this.showAlert = this.showAlert.bind(this)
     }
 
-    openAddWordModal(e){
-        e.preventDefault()
-        this.setState((prev) =>({
+    openAddWordModal() {
+        this.setState((prev) => ({
             isAddWordOpen: !prev.isAddWordOpen
         }))
     }
 
-    getModalStatus(){
-        return this.state.isAddWordOpen
+    showAlert() {
+        this.setState((prev) => ({
+            isAlertSuccessShow: !prev.isAlertSuccessShow
+        }))
     }
 
     render() {
@@ -52,14 +54,18 @@ class Header extends React.Component {
                     </Col>
                     <Col md={6} className="d-flex justify-content-end">
                         <div id="buttons_panel">
-                            <a href="/add"><SVGPlus className="panel_button" onClick={this.openAddWordModal}/></a>
-                            <a href="/notifications"><SVGNotification className="panel_button" /></a>
-                            <a href="/settings"><SVGSettings className="panel_button" /></a>
+                            <div className="pointer-cursor" onClick={this.openAddWordModal}><SVGPlus className="panel_button" /></div>
+                            <div className="pointer-cursor" ><SVGNotification className="panel_button" /></div>
+                            <div className="pointer-cursor" ><SVGSettings className="panel_button" /></div>
                         </div>
                     </Col>
                 </Row>
                 {/* Modals */}
-                <AddWordModal toggle={this.openAddWordModal} isOpen={this.getModalStatus}/>
+                <AddWordModal toggle={this.openAddWordModal} isOpen={this.state.isAddWordOpen} successToggle={this.showAlert}/>
+                <Alert className="alert_style" color="success" isOpen={this.state.isAlertSuccessShow}>
+                    <p>Word has been added!</p>
+                </Alert>
+                {/* <Test /> */}
             </div>
         )
     }

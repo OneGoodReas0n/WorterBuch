@@ -43,10 +43,39 @@
     fill: var(--header_icons_color);
 }
 
+.pointer-cursor :hover{
+    cursor: pointer;
+}
+
+.panel_button :hover{
+    cursor: pointer;
+}
+
+.svg_form_style{
+    position: relative;
+    z-index: -1;
+}
+
 .form_button{
-    width: 20px;
-    height: 20x;
-    fill:#D4D4D4;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: none;
+    position: relative;
+    z-index: 1;
+}
+
+.form_button:hover{
+    background: none !important;
+}
+
+.form_button:active{
+    border: none;
+    background: none;
+}
+
+.form_button:target{
+    border: none;
 }
 
 .modal-content{
@@ -57,6 +86,15 @@
     margin: 0 16px;
 }
 
-#buttons_panel a{
+#buttons_panel {
     display: contents;
+}
+
+.alert_style{
+    width:fit-content;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    z-index: 100;
 }

@@ -8,7 +8,6 @@ import styles from "./Vocabulary.module.css"
 export default function home(props) {
 
     const routes = props.routes
-    console.log(routes);
     return (
         <div className="main">
             <Row>

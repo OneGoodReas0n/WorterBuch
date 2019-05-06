@@ -1,7 +1,7 @@
 import React from 'react';
 
 // PACKAGES
-import { Row, Col } from "reactstrap";
+import { Row, Col, Fade } from "reactstrap";
 
 // CSS
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -19,13 +19,13 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-
+        fade: true
     }
   }
 
   render() {
     return (
-        <div id="App">
+      <div id="App">
           <Header />
           <Row id="MainPart" className="w-100">
             <Col md={2} id="SideBar_box">
@@ -35,7 +35,7 @@ class App extends React.Component {
               <Content />
             </Col>
           </Row>
-        </div>
+      </div>
     )
   }
 
